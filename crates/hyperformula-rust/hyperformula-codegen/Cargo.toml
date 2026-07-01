@@ -1,0 +1,18 @@
+[package]
+name = "hyperformula-codegen"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[[bin]]
+name = "hyperformula-codegen"
+path = "src/main.rs"
+
+[dependencies]
+anyhow.workspace = true
+clap.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+reqwest = { version = "0.12", features = ["blocking", "rustls-tls"], default-features = false }
+scraper = "0.20"

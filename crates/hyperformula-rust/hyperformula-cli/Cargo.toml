@@ -1,0 +1,16 @@
+[package]
+name = "hyperformula-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[[bin]]
+name = "hyperformula"
+path = "src/main.rs"
+
+[dependencies]
+hyperformula-core = { path = "../hyperformula-core" }
+hyperformula-funcs = { path = "../hyperformula-funcs" }
+clap.workspace = true
+anyhow.workspace = true

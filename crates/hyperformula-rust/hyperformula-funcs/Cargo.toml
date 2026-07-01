@@ -1,0 +1,9 @@
+[package]
+name = "hyperformula-funcs"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+hyperformula-core = { path = "../hyperformula-core" }
